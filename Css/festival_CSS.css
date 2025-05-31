@@ -1,0 +1,763 @@
+				@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+				*{
+					margin: 0;
+					padding: 0;
+					font-family: "Poppins", sans-serif;
+				}
+				body{
+					line-height: 1.5;
+					overflow-x: hidden;
+					font-family: "Poppins", sans-serif;
+				}
+				.navbar-brand{
+					font-size: 25px;
+					font-family: "Shadows Into Light", cursive;
+					color: #862a54;
+				}
+				.navbar-brand:hover{
+					color: #B8001F;
+				}
+				/*.nav-item a{
+					font-size: 17px;
+					font-family: "Space Grotesk", sans-serif;
+				}*/
+				.navbar{
+					width: 100%;
+					z-index: 1;
+					position: fixed;
+				}
+				.ct{
+					max-width: 1170px;
+					margin:auto;
+				}
+				.row{
+					display: flex;
+					flex-wrap: wrap;
+				}
+				img{
+					max-width: 100%;
+					vertical-align: middle;	
+				}
+				.nayone,.kason{
+					width: 300px;
+				}
+				.gallery{
+					width: 100%;
+					display: block;
+					min-height: 100vh;
+					background-color: white;
+					padding: 100px 0;
+				}
+				.gallery .gallery-filter{
+					padding: 0 15px;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 20px;
+				} 
+				.gallery-filter{
+					width: 250px;
+					height: 300px;
+					margin-left: 	20px;
+					display: flex;
+					justify-content: space-evenly		;
+					flex-wrap: 	wrap	;
+					margin-top: 50px;
+				}
+				.filter-item{
+					height: 20px;
+					align-items: 	center	;
+					border-radius: 	5px;
+					height	: 27px;
+					background-color: whitesmoke;
+					justify-content: 	center	;
+					padding: 0 20px;  
+					cursor: pointer;
+					text-align: center;
+					font-size: 17px;
+					font-family: 'Quicksand', serif;
+				}
+				.filter-item:hover{
+					border-left: 2px solid #862a54;
+					border-bottom: 2px solid #862a54;
+					background-color: beige;
+					color: black;
+				}
+				.gallery .gallery-filter .filter-item{
+					width: 100px;
+					background-color: whitesmoke;
+					border-radius: 2px;
+					color: black;
+					font-size: 18px;
+					text-transform: uppercase;
+					display: inline-block;
+					margin:0 10px;
+					cursor: pointer;
+					border-bottom: 2px solid transparent;
+					line-height: 1.2;
+					transition: all 0.3s ease;
+				}
+				.forwave{
+					margin-top:10px;
+				}
+				.gallery .gallery-item{
+					width: calc(100% / 3);
+					padding: 6px;
+
+				}
+				.gallery-item-inner img:hover{
+					
+				}
+				.nav-item a{
+					color: #862a54;
+				}
+				.nav-item a:hover{
+					color: #B8001F;
+				}
+				.gallery-item img{
+					height: 200px;
+				}
+				.gallery .gallery-filter .filter-item.active{
+					color: gold;
+					border-bottom: 1px solid gold;
+				}
+				.gallery .gallery-item.hide{
+					display: none;
+				}
+				.gallery .gallery-item.show{
+					animation: galleryAni 1.0s;
+				}
+				@keyframes galleryAni{
+					0%{
+						opacity: 0;
+					}
+					100%{
+						opacity: 1;
+					}
+				}
+				.gallery .gallery-filter img{
+					width: 	500px;
+				}
+				.menu{
+					height: 650px;
+					border-right: 	4px solid	whitesmoke	;
+					position: fixed;
+				}
+				.gal{
+					height: 500px;
+					margin-left: 310px;
+				}
+				.navbar-collapse{
+					display: flex;
+					justify-content: space-between;
+				}
+				.txt,.ig{
+					height: 500px;
+				}
+				.ig img{
+					width: 630px;
+					height: auto;
+				}
+				.fortxt,.fortxt2{
+					width: 630px;
+					height: 470px;
+					margin-left: 10px;
+				}
+				.fortxt2{
+					width: 450px;
+					margin-top:   20px;
+
+				}
+				.postcard__title{
+					cursor: default;
+				}
+				.title,.title_b{
+					font-family: "Anton SC", sans-serif;
+					display: inline-block;
+					margin-left: 150px;
+					margin-top: 130px;
+					font-size:85px;
+					color: #862a54;
+					line-height: 90px;
+					letter-spacing: 5px;
+					cursor: pointer;
+				}
+				.title2_s{
+					font-size: 15px;
+					letter-spacing: 0px;
+				}
+				.title_b{
+					font-family: "Boldonse",sans-serif;
+					line-height: 35px;
+					font-size: 35px;
+					margin-left:1px;
+					margin-top: 2px;
+					letter-spacing: 1px;
+				}
+				.title_s{
+					display: inline-block;
+					font-size: 13px;
+					margin-left: -20px;
+				}
+				.title2{
+					display: inline-block;
+					margin-left: 150px;
+					font-size: 10px;
+				}
+				.postcard {
+					flex-wrap: wrap;
+					display: flex;
+					
+					box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+					border-radius: 10px;
+					margin: 0 0 2rem 0;
+					overflow: hidden;
+					position: relative;
+					color: black;
+
+					&.dark {
+						background-color: white;
+					}
+					&.light {
+						background-color: #e1e5ea;
+					}
+					
+					.t-dark {
+						color: #18151f;
+					}
+					
+					a {
+						color: inherit;
+					}
+					
+					h1, .h1 {
+						margin-bottom: 0.5rem;
+						font-weight: 500;
+						line-height: 1.2;
+					}
+					.small {
+						font-size: 80%;
+					}
+
+					.postcard__title {
+						font-size: 1.75rem;
+					}
+
+					.postcard__img {
+						max-height: 180px;
+						width: 100%;
+						object-fit: cover;
+						position: relative;
+					}
+
+					.postcard__img_link {
+						display: contents;
+					}
+
+					.postcard__bar {
+						width: 50px;
+						height: 10px;
+						margin: 10px 0;
+						border-radius: 5px;
+						background-color: #424242;
+						transition: width 0.2s ease;
+					}
+
+					.postcard__text {
+						padding: 1.5rem;
+						position: relative;
+						display: flex;
+						flex-direction: column;
+					}
+
+					.postcard__preview-txt {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						text-align: justify;
+						height: 100%;
+					}
+
+					.postcard__tagbox {
+						display: flex;
+						flex-flow: row wrap;
+						font-size: 14px;
+						margin: 20px 0 0 0;
+						padding: 0;
+						justify-content: center;
+
+						.tag__item {
+							display: inline-block;
+							border-radius: 3px;
+							padding: 2.5px 10px;
+							margin: 0 5px 5px 0;
+							cursor: default;
+							user-select: none;
+							transition: background-color 0.3s;
+						}
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						opacity: 1;
+						border-radius: 10px;
+					}
+
+					&:hover .postcard__bar {
+						width: 100px;
+					}
+				}
+
+				@media screen and (min-width: 769px) {
+					.postcard {
+						flex-wrap: inherit;
+
+						.postcard__title {
+							font-size: 2rem;
+						}
+
+						.postcard__tagbox {
+							justify-content: start;
+						}
+
+						.postcard__img {
+							max-width: 300px;
+							max-height: 100%;
+							transition: transform 0.3s ease;
+						}
+
+						.postcard__text {
+							padding: 3rem;
+							width: 100%;
+						}
+						&:hover .postcard__img {
+							transform: scale(1.1);
+						}
+
+						&:nth-child(2n+1) {
+							flex-direction: row;
+						}
+
+						&:nth-child(2n+0) {
+							flex-direction: row-reverse;
+						}
+
+						&:nth-child(2n+1) .postcard__text::before {
+							left: -12px !important;
+							transform: rotate(4deg);
+						}
+
+						&:nth-child(2n+0) .postcard__text::before {
+							right: -12px !important;
+							transform: rotate(-4deg);
+						}
+					}
+				}
+				@media screen and (min-width: 1024px){
+					.postcard__text {
+						padding: 2rem 3.5rem;
+					}
+
+					.postcard__text:before {
+						content: "";
+						position: absolute;
+						display: block;
+
+						top: -20%;
+						height: 130%;
+						width: 55px;
+					}
+
+					.postcard.dark {
+						.postcard__text:before {
+							background: white;
+						}
+					}
+					.cta {
+						position: relative;
+						margin: auto;
+						padding: 12px 18px;
+						transition: all 0.2s ease;
+						border: none;
+						background: none;
+						cursor: pointer;
+						margin-left: -10px;
+						margin-top: 10px;
+					}
+
+					.cta:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						display: block;
+						border-radius: 50px;
+						background: #B8001F;
+						width: 45px;
+						height: 45px;
+						transition: all 0.3s ease;
+					}
+
+					.cta span {
+						position: relative;
+						font-family: "Ubuntu", sans-serif;
+						font-size: 18px;
+						font-weight: 700;
+						letter-spacing: 0.05em;
+						color: #234567;
+					}
+
+					.cta svg {
+						position: relative;
+						top: 0;
+						margin-left: 10px;
+						fill: none;
+						stroke-linecap: round;
+						stroke-linejoin: round;
+						stroke: #234567;
+						stroke-width: 2;
+						transform: translateX(-5px);
+						transition: all 0.3s ease;
+					}
+
+					.cta:hover:before {
+						width: 100%;
+						background: whitesmoke;
+					}
+
+					.cta:hover svg {
+						transform: translateX(0);
+					}
+
+					.cta:active {
+						transform: scale(0.95);
+					}
+
+					.logo img {
+						width: 50px;
+					}
+					.txt,.ig{
+						height: 500px;
+					}
+					.ig img{
+						width: 630px;
+						height: auto;
+					}
+					.fortxt,.fortxt2{
+						width: 630px;
+						height: 470px;
+						margin-left: 10px;
+					}
+					.fortxt2{
+						width: 450px;
+						margin-top:   20px;
+
+					}
+					.navbar .menu-items {
+						width:1000%;
+					}
+					.title,.title_b{
+						font-family: "Anton SC", sans-serif;
+						display: inline-block;
+						margin-left: 150px;
+						margin-top: 130px;
+						font-size:85px;
+						color: #862a54;
+						line-height: 90px;
+						letter-spacing: 5px;
+						cursor: pointer;
+					}
+					.title2_s{
+						font-size: 15px;
+						letter-spacing: 0px;
+					}
+					.title_b{
+						font-family: "Boldonse", sans-serif;
+						line-height: 35px;
+						font-size: 33px;
+						line-height: 55px;
+						margin-left:1px;
+						margin-top: 2px;
+						letter-spacing: 1px;
+					}
+					.title_s{
+						display: inline-block;
+						font-size: 13px;
+						margin-left: -20px;
+					}
+					.title2{
+						display: inline-block;
+						margin-left: 150px;
+						font-size: 10px;
+
+					}
+					.sec{
+						margin-top: 100px;
+						width: 100%;
+						height: 600px;
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+					}
+					.third{
+						width: 100%;
+						height: 600px;
+						background-color: whitesmoke;
+						margin-top: 200px;
+					}
+					.card{
+						width: 510px;
+						height: 420px;
+						border: none;
+						background-color: whitesmoke;
+						background-image:  url(https://i.pinimg.com/736x/7d/ed/64/7ded64933f79e2bd5c5d322563bb0577.jpg);
+					}
+					.smcard3{
+						width: 510px;
+						height: 100px;
+					}
+					.smcard3 p{
+						color: #862a54;
+						margin-top: 10px;
+						text-align: center;
+						font-size: 50px;
+						font-family: "Anton SC", sans-serif;
+						letter-spacing: 1px;
+					}
+					.smcard4{
+						width: 510px;
+						height: 310px;
+						background-image:   url(https://tourism.gov.mm/it/wp-content/uploads/2019/04/7.-Thadingyut-Festival-900x600.jpg  );
+					}
+					.card1{
+						height:300px;
+					}
+					.card2{
+						width: 510px;
+						height: 300px;
+						display: flex;
+						justify-content: space-between;
+					}
+					.smcard,.smcard1{
+						width: 251px;
+						height: 290px;
+						background-color: whitesmoke;
+						background-image:   url( https://backend.threeland.com/storage/images/bloggallery/files/Thadingyut-Festival-of-Lights-Myanmar-2018.jpg );
+					}
+					.smcard1{
+						background-image:   url( https://i.pinimg.com/736x/a6/f7/55/a6f755b3de7d36dc2af57338ef8fe621.jpg );
+					}
+					.card3{
+						display:  inline-block  ;
+						margin-top:400px;
+						width: 510px;
+						height: 290px;
+						background-color:   whitesmoke  ;
+						background-image:   url(https://www.indochinatravel.com/country/myanmar/images/phaung-daw-u-festival-inle-lake880.jpg);
+					}
+					.card,.card1,.card2,.smcard1,.smcard,.card3,.smcard4{
+						background-size:  cover ;
+						border-radius:  10px;
+					}
+					.card,.card1,.card2,.smcard1,.smcard,.smcard4:hover{
+						transition: opacity .3s ease-in;
+						opacity: 1;
+					}
+					.forwave2{
+						margin-top: 10px;
+					}
+					.forfooter{
+						text-align:   center  ;
+						margin-top:   -70px;
+						color: white;
+					}
+					.forfestival_img{
+						width: 100%;
+						height: 565px;
+						background-color: whitesmoke;
+						background-image: url(pngegg.png);
+						background-size: cover;
+					}
+					.sec{
+						margin-top: 100px;
+						width: 100%;
+						height: 600px;
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+					}
+					.forfestival_img{
+						width: 100%;
+						height: 565px;
+						background-color: whitesmoke;
+						background-image: url(../media./pngegg.png);
+						background-size: cover;
+					}
+					.forimg_lab{
+						width: 800px;
+						height: 400px;
+						align-items: center;
+						margin-left: 100px;
+
+					}
+					.sec{
+						margin-top: 100px;
+						width: 100%;
+						height: 600px;
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+					}
+					.forimg_lab,.big-text{
+						display: inline-block;
+						margin-top: 50px;
+						font-family: "Anton SC", sans-serif;
+						font-size:60px;
+						color: #862a54;
+						line-height: 50px;
+					}
+					.small-text{
+						margin-top: 20px;
+						width: 400px;
+						font-size: 15px;
+						color: white;
+						line-height: 20px;
+						letter-spacing: 1px;
+						color: #862a54;
+						font-family: "Quicksand ",sans-serif;
+					}
+					.t,.p{
+						height: 450px;
+					}
+					.p{
+						background-size: cover;
+					}
+					.p img{
+						width: 100%;
+						object-fit: cover ;
+					} 
+					.p{
+						width:  500px;
+						height: 500px;
+						-webkit-mask-image:url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImZpbGwiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDQ1IDAuNSAwLjUpIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNEY0NkU1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2I4Y2ZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTg0LjUsNjVRODAsODAsNjUsNzguNVE1MCw3NywzNS41LDc4UTIxLDc5LDE0LjUsNjQuNVE4LDUwLDE3LDM4UTI2LDI2LDM4LDE1UTUwLDQsNjYuNSwxMC41UTgzLDE3LDg2LDMzLjVRODksNTAsODQuNSw2NVoiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSJ1cmwoI2ZpbGwpIi8+PC9zdmc+);
+						-webkit-mask-repeat:no-repeat;
+					}
+					.home_p{
+						height: 300px;
+						margin-top: 150px;
+					}
+					.schedule-section {
+						max-width: 700px;
+						margin: 50px auto;
+					}
+					.schedule_title{
+						font-family: "Boldonse", sans-serif;
+						color: #862a54;
+						font-size: 35px;
+					}
+					.schedule-section h2 {
+						text-align: center;
+						color: #e63946;
+						margin-bottom: 30px;
+					}
+
+					.schedule-list {
+						list-style: none;
+						padding-left: 0;
+					}
+					. li {
+						background: #f1faee;
+						margin-bottom: 20px;
+						padding: 15px 20px;
+						border-left: 5px solid #457b9d;
+						border-radius: 6px;
+						line-height: 1.6;
+						color: #333;
+					}
+
+					.schedule-list li strong {
+						color: #1d3557;
+						display: block;
+						margin-bottom: 5px;
+					}
+					.forshd{
+						margin-top: 100px;
+					}
+					.forshd ul{
+						list-style: none;
+						padding: 0px;
+						margin-top: 30px;
+					}
+					.forshd ul li {
+						margin-bottom: 25px;
+						padding: 15px;
+						border-left: 4px solid #457b9d;
+						border-radius: 6px;
+						background: whitesmoke;
+						font-family: "Poppins", sans-serif;
+					}
+					.forshd ul li:hover{
+						margin-left: 20px;
+						transition-duration: 0.4s;
+						cursor: default;
+						background-color: white;
+					}
+					.gallery-item img:hover{
+						
+					}
+					.fortop{
+						margin-top: 100px;
+					}
+					.accordion{
+						width: 500px;
+						margin-left: 200px;
+					}
+					.accordion-item:first-of-type .accordion-button {
+						border-radius: 10px;
+						border: none;
+						background-color: beige;
+					}
+					.accordion-item:last-of-type {
+						border-radius: 10px;
+						border: none;
+					}
+					.accordion-item:first-of-type {
+						border-radius: 10px;
+						border: none;
+						background-color: beige;
+					}
+					.accordion-item:last-of-type .accordion-button {
+						border-radius: 10px;
+						border: none;
+						background-color: beige;
+					}
+					.accordion-item:last-of-type .accordion-button.collapsed {
+						border-radius: 10px;
+						border: none;
+
+					}
+					.accordion-item:last-of-type {
+						border-radius: 10px;
+						border: none;
+						background-color: beige;
+					}
+					.forbkg{
+						width: 100%;
+						height: 400px;
+/*						background-color: #862a54;*/
+					}
+					.cnt{
+						border: none;
+					}
+					    .bi{
+      font-size: 25px;
+      margin-left:-100px;
+      display: inline-block;
+/*      color: white;*/
+      color: skyblue;
+    }
+    .modal-body{
+    	width: 300px;
+    }
